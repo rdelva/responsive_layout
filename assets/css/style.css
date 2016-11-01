@@ -32,8 +32,9 @@ img {
 }
 /************************************ Section Styles ************************************/
 
-header, .portfolio {
+header, .portfolio, .contact {
 	text-align: center;
+	margin-bottom: 3em;
 }
 
 .logo h1 {
@@ -55,14 +56,15 @@ header, .portfolio {
 		background-color: #fff;
 }
 
-.profile, footer {
-	padding-top: 2em;
-}
 
 .portfolio li{
 
 	list-style: none;
+}
 
+.portfolio li a {
+	font-weight:normal;
+	color:#333;
 }
 	
 
