@@ -1,0 +1,84 @@
+/************************************ Base Styles ************************************/
+* {
+	box-sizing: border-box;
+}
+
+a {
+	text-decoration: none;
+	color:#836E8B;
+	font-weight: bold;
+}
+
+a:visited {
+	text-decoration: none;
+	color:#836E8B;
+}
+
+a:hover {
+	text-decoration: none;
+	color:#ddd;
+}
+
+
+body {
+  color: #222;
+  background: #f7f5f0;
+
+}
+
+
+img {
+	max-width:100%;
+}
+/************************************ Section Styles ************************************/
+
+header, .portfolio {
+	text-align: center;
+}
+
+.logo h1 {
+	margin: 10px;
+	
+}
+
+.mainNav ul {
+
+	margin:0;
+	padding: 0;
+
+}
+
+.mainNav li a{
+		padding: 10px 20px;
+		margin:10px;
+		display:block;
+		background-color: #fff;
+}
+
+.profile, footer {
+	padding-top: 2em;
+}
+
+.portfolio li{
+
+	list-style: none;
+
+}
+	
+
+/************************************ Media Queries ************************************/
+
+
+	
+
+@media screen and (min-width: 720px) {
+
+	
+	
+
+}
+
+
+
+
+}
