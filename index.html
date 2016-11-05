@@ -8,28 +8,31 @@
 		<link href="assets/css/normalize.css" type="text/css"  rel="stylesheet">
 	</head>
 	<body>
-		<div class="wrap">
+		<div class="wrap ">
 		<header>
 			<a id="top"></a>
-			<div class="container">
-				<div class="name">
-					<h1>Rose Delva</h1>
-				</div>
-				<nav class="mainNav">
-					<ul>
-						<li><a href="#home">Home</a></li>
-						<li><a href="#portfoilo">Portfolio</a></li>
-						<li><a href="#contact">Contact</a></li>
-					</ul>
-				</nav>
-				<div class="profile">
+			<div class="container clearfix  ">
+				
+				<div class="clearfix">
+					<div class="name ">
+						<h1>Rose Delva</h1>
+					</div>
+					<nav class="mainNav ">
+						<ul>
+							<li><a href="#home">Home</a></li>
+							<li><a href="#portfoilo">Portfolio</a></li>
+							<li><a href="#contact">Contact</a></li>
+						</ul>
+					</nav>
+				</div>	
+				<div class="profile clearfix">
 					<img src="assets/img/responsive-layout-profile.png">
 					<p>Hi I'm a front-end developer who loves response design and css. I recently finished a degree in front-end web develpment at Treehouse and am excited to put my skills to use!</p>
 				</div>
 			</div> <!-- end of container -->
 		</header>
 		<div class="portfolio">
-			<div class="container">
+			<div class="container clearfix">
 				<h2>Portfolio</h2><a id="portfolio"></a>
 				<a id="portfolio"></a>
 				<ul class="gallery">
@@ -117,6 +120,8 @@
 							<p>Someone can enter in the numbers they want, press the big blue button and get the result.</p>
 						</a>
 					</li>
+
+				
 				</ul>
 			</div> <!-- end of container -->
 		</div> <!-- end of portfolio -->
@@ -124,16 +129,24 @@
 			<div class="container">
 				<h2>Contact</h2>
 				<a id="contact"></a>
-				<p>If you're interested in chatting or want more information about I'e been workking on, I'd love to hear from you!</p>
+				<p>If you're interested in chatting or want more information about I'e been working on, I'd love to hear from you!</p>
 				<p><strong>Phone:</strong> +1 (111) 555-1234</p>
-				<p> <strong>Email:</strong> <a href="mailto:email@rdelva.com">email@rdelva.com</a></p>
+				<p> <strong>Email:</strong> <strong><a href="mailto:email@rdelva.com">email@rdelva.com</a></strong></p>
 			</div><!--end of container -->
 		</div><!--end of contact -->
 	</div> <!-- end of wrapper -->
 		<footer>
 			<div class="container clearfix">
 				<div class="name">Rose Delva</div>
-				<a href="#top">Back to Top</a>
+					<nav class="footerNav">
+						<ul>
+							<li><a href="#home">Home</a></li>
+							<li><a href="#portfoilo">Portfolio</a></li>
+							<li><a href="#contact">Contact</a></li>
+						</ul>
+				</nav>	
+				<a href="#top" class="topAnchor">Back to Top</a>
+			
 			</div><!-- end of container -->
 		</footer> <!-- end of footer --> 
 	</body>
