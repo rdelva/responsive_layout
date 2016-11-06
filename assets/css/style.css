@@ -47,7 +47,7 @@ a {
 	text-transform: uppercase;
 }
 
-.mainHeader{
+.mainHeader, .portfolio .container{
 	padding-top:10px;
 }
 
@@ -82,7 +82,7 @@ a {
 	Base Layout Styles
 *****************************************************************************/
 
-.container {
+.mainHeader, .profile {
 	padding: 1em;
 
 }
@@ -105,10 +105,12 @@ a {
 
 
 .portfolio {
-	background-color: #fff;
 	padding-top: 10px;
 }
 
+.portfolio .container {
+	background-color: #fff;
+}
 
 
 footer .container {
@@ -132,9 +134,9 @@ footer {
 
 
 	.container {
-		width: 90%;
+	
 		margin: 0 auto;
-		max-width: 767px;
+		
 	}
 
 	.footerNav {
@@ -162,10 +164,6 @@ footer {
 
 @media  screen and (min-width: 768px){
 
-	.container{
-		max-width: 1023px;
-
-	}
 
 	.mainNav li{
 		display: inline-block;
@@ -231,8 +229,12 @@ footer {
 
 @media screen and (min-width: 1024px) {
 
-	
 
+
+	.container {
+		
+	}
+	
 	
 	.name {
 		float: left;
