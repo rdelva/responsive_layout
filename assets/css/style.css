@@ -7,7 +7,7 @@
 
 body {
 	color:#4a4a4a;
-	background-color: #fafafa;
+	background-color: #DDD1E7;
 }
 
 img {
@@ -58,11 +58,17 @@ a {
 
 .mainNav,
 .footerNav,
-.gallery {
+.gallery, 
+.skillList{
 
 	list-style: none;
 	padding: 0;
 
+}
+
+.skillList li{
+	display: inline-block;
+	margin: 10px;
 }
 
 .clearfix::after {
@@ -91,14 +97,19 @@ a {
 .name a,
 .mainNav a {
 	display: block;
-	padding: 10px 15px;
 } 
+
+.mainNav a {
+	padding: 0 15px;
+}
 
 
 .portfolio {
 	background-color: #fff;
 	padding-top: 10px;
 }
+
+
 
 footer .container {
 	border-top: solid 1px #e7e7e7;
@@ -117,7 +128,7 @@ footer {
 	Media Queries
 *****************************************************************************/
 
-@media (min-width:0px){
+@media screen and  (min-width:0px){
 
 
 	.container {
@@ -139,6 +150,7 @@ footer {
 	}
 
 
+	.mainHeader,
 	.profile,
 	.portfolio,
 	.contact,
@@ -146,12 +158,130 @@ footer {
 		text-align: center;
 	}
 
-
-	/****************************Navigation*******************************************/
-
-
-
-
-
-
 }
+
+@media  screen and (min-width: 768px){
+
+	.container{
+		max-width: 1023px;
+
+	}
+
+	.mainNav li{
+		display: inline-block;
+		background-color: inherit;
+
+	}
+
+	.name {
+		background-color: inherit;
+	}
+
+	.gallery li:nth-child(2n+1) {
+		clear: left;
+
+	}
+
+	.profile img {
+
+		float:right;
+		padding-left:1em;	
+
+
+	}
+
+	.profile {
+		
+		text-align: left;		
+		line-height: 25px;
+	}
+
+
+	.gallery li{
+
+		float: left;
+		width: 45%;
+		margin: 2.5%;
+
+	}
+
+	
+	.footerNav ul {
+		float: right;
+		margin: 0px;
+		display: block;
+	}
+
+
+	.footerNav ul li{
+		
+		display: inline;	
+		margin: 0 10px;
+		padding: 0 10px;			
+	}
+
+	
+
+	.topAnchor {
+		visibility: collapse;
+	} 
+
+}/* end of min-width:768px */
+
+
+@media screen and (min-width: 1024px) {
+
+	
+
+	
+	.name {
+		float: left;
+		
+	}
+
+	.mainNav {
+		float: right;
+		
+	}
+
+	.portfolio {
+		padding: 0 1em;
+	}
+	
+	
+	
+	.gallery li{
+
+		width: 28.3333%;
+
+	}
+
+	.gallery li:nth-child(2n+1){
+		clear:right;
+	}
+
+	
+
+	.footerNav ul {
+		float: right;
+		margin: 0px;
+	}
+
+
+	.footerNav ul li{
+		visibility: visible;	
+		display: inline;	
+		margin: 0 10px;
+		padding: 0 10px;			
+	}
+
+	
+
+	.topAnchor {
+		visibility: collapse;
+	} 
+
+	
+}
+
+
