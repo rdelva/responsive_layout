@@ -21,7 +21,8 @@ a {
 .name a,
 .mainNav a,
 .footerNav a,
-.topAnchor {
+.topAnchor,
+.footerName a {
 	text-decoration: none;
 	color:#4a4a4a;
 	font-weight: bold;
@@ -30,7 +31,7 @@ a {
 .name a:hover,
 .mainNav a:hover,
 .footerNav a:hover,
-.footerName a:hover
+.footerName a:hover,
 .topAnchor a:hover
  {
 	color:#fdd36d;
@@ -43,12 +44,16 @@ a {
 }
 
 
-.name, h2, .mainNav, .footerNav {
+ h2, .mainNav, .footerNav {
 	text-transform: uppercase;
 }
 
 .mainHeader, .portfolio .container{
 	padding-top:10px;
+}
+
+.mainFooter .container {
+	padding:20px 0 20px 0;
 }
 
 .name,h4 {
@@ -57,7 +62,6 @@ a {
 }
 
 .mainNav,
-.footerNav,
 .gallery, 
 .skillList{
 
@@ -100,7 +104,7 @@ a {
 } 
 
 .mainNav a {
-	padding: 0 15px;
+	padding: 0 0 0 15px;
 }
 
 
@@ -139,9 +143,6 @@ footer {
 		
 	}
 
-	.footerNav {
-		display: none;
-	}
 
 	h4 {
 		float:left;
@@ -158,6 +159,10 @@ footer {
 	.contact,
 	.skills {
 		text-align: center;
+	}
+
+	.footerNav {
+		display: none;
 	}
 
 }
@@ -204,25 +209,35 @@ footer {
 	}
 
 	
-	.footerNav ul {
-		float: right;
-		margin: 0px;
-		display: block;
-	}
-
-
-	.footerNav ul li{
-		
-		display: inline;	
-		margin: 0 10px;
-		padding: 0 10px;			
-	}
-
-	
-
 	.topAnchor {
 		visibility: collapse;
 	} 
+
+
+
+	.footerNav {
+		display: inline;
+		float: right;
+	}
+
+	.footerName,.footerNav li{
+		display: inline-block;
+		padding-left:10px;
+		
+	}
+
+	
+	.footerNav  {
+		float: right;
+		margin: 0px;
+		padding: 0px;
+		
+	}
+
+
+	
+
+	
 
 }/* end of min-width:768px */
 
@@ -233,11 +248,11 @@ footer {
 
 	.container {
 
-		width: 85%;
+		width: 90%;
 		
 	}
 	
-	
+
 	.name {
 		float: left;
 		
@@ -248,6 +263,7 @@ footer {
 		
 	}
 
+
 	.portfolio {
 		padding: 0 1em;
 	}
@@ -256,7 +272,7 @@ footer {
 	
 	.gallery li{
 
-		width: 28.3333%;
+		width: 28%;
 
 	}
 
@@ -265,25 +281,6 @@ footer {
 	}
 
 	
-
-	.footerNav ul {
-		float: right;
-		margin: 0px;
-	}
-
-
-	.footerNav ul li{
-		visibility: visible;	
-		display: inline;	
-		margin: 0 10px;
-		padding: 0 10px;			
-	}
-
-	
-
-	.topAnchor {
-		visibility: collapse;
-	} 
 
 	
 }
