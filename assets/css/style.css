@@ -130,8 +130,8 @@ footer .container {
 	border-top: solid 1px #e7e7e7;
 }
 
-footer {
-	min-height: calc (100vh - 33px);
+.wrap {
+	min-height: calc(100vh - 92px);
 
 }
 
